@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <main>
+        <div class="container">
+            <section class="inf0-f">
+                <div class="info-item">
+                    <p>
+                        Оголошення функції (Function Declaration):
+                    </p>
+                    <p>
+                        function add(a, b) {
+                            return a + b;
+                          }
+                    </p>
+                </div>
+                <div class="info-item">
+                    <p>
+                        Вираз функції (Function Expression):
+                    </p>
+                    <p>
+                        const add = function(a, b) {
+                            return a + b;
+                          };
+                    </p>
+                </div>
+                <div class="info-item">
+                    <p>
+                        Стрілкові функції (Arrow Function):
+                    </p>
+                    <p>
+                        const add = (a, b) => {
+                            return a + b;
+                          };
+                          
+                          // Або так, якщо тіло функції складається з одного виразу:
+                          const 
+                    </p>
+                </div>
+            </section>
+            <section class="section2">
+                <h1>Вивести аргументи</h1>
+                <button onclick="countArguments('Hello', 'world', 123)">аргумент</button>
+                <p id="result1"></p>      
+            </section>
+            
+            <section class="section3">
+                <h1>функція на 2 числа</h1>
+                <p>напиши два числа</p>
+                <input type="text" id="number1">
+                <input type="text" id="number2">
+                <button onclick="compareNumbers()">Compare</button>
+                <p id="result2"></p>
+            </section>
+    
+            <section class="section4">
+                <h1>Факторіали </h1>
+                <p>Пиши своє число сюди. . .</p>
+                <input type="text" id="number">
+                <button onclick="calculateFactorial()">Calculate</button>
+                <p id="result3"></p>
+            </section>
+            <section class="section5">
+                <h1>Number Converter</h1>
+                <p>Enter three separate digits:</p>
+                <input type="text" id="digit1">
+                <input type="text" id="digit2">
+                <input type="text" id="digit3">
+                <button onclick="convertToNumber()">Convert</button>
+                <p id="result4"></p>
+            </section>
+    
+            <section class="section6">
+                <h1 class="h1">Обчислення площі прямокутника або квадрата</h1>
+                    <form id="form">
+                        <label for="length">Довжина:</label>
+                        <input type="number" id="length" name="length" required>
+                        <label for="width">Ширина:</label>
+                        <input type="number" id="width" name="width" required>
+                        <button type="submit">Обчислити</button>
+                    </form>
+                    <div class="result5" id="result5"></div>
+            </section>
+    
+            <section class="section7">
+                <label for="inputNumber">Введіть число:</label>
+        <input type="number" id="inputNumber">
+        <button onclick="checkNumber()">Перевірити</button>
+        <div id="result6"></div>
+            </section>
+        </div>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
